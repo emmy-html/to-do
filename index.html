@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.scss" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/33391c5587.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="content-wrapper">
+        <h1>Todo</h1>
+        <div class="color-mode-switch">
+          <img src="/images/icon-moon.svg" alt="Day Mode/Night Mode Switch" />
+        </div>
+      </div>
+    </header>
+    <section id="to-do-app">
+      <aside class="add-new-item">
+        <ul>
+          <li>Create a new todo...</li>
+        </ul>
+      </aside>
+      <ul id="list">
+        <li>Complete online JavaScript Course</li>
+        <li>Jog around the park 3x</li>
+        <li>10 minutes meditation</li>
+        <li>Read for 1 hour</li>
+        <li>Pick up groceries</li>
+        <li>Complete Todo app on Frontend mentor</li>
+      </ul>
+      <aside>
+        <!-- Add dynamic number -->
+        items left Clear Completed
+      </aside>
+      <aside class="mobile-select">All Active Completed</aside>
+      <aside>
+        <p>Drag and drop to reorder list</p>
+      </aside>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
